@@ -136,7 +136,7 @@ body {
   align-content: center;
 }
 
-.companies-logo{
+.companies-logo {
   width: 100%;
 }
 
@@ -145,7 +145,60 @@ body {
   height: auto;
 }
 
+/* featured products related styles */
+.featured-products {
+  max-width: 1110px;
+  margin: 100px auto;
+}
 
+.featured-products-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-products-content {
+  width: 40%;
+}
+
+.featured-products-img > img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.featured-products-content {
+  width: 55%;
+}
+
+.featured-products-title {
+  color: #0a0826;
+  font-weight: bold;
+  font-size: 2.37rem;
+}
+
+.featured-products-description {
+  color: #6c6c6c;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 26px 0px;
+}
+
+.featured-btn {
+  background-color: #e02c6d;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 10px 24px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#featured-btn-title {
+  padding-right: 8px;
+}
 
 /* responsive media query */
 
@@ -163,7 +216,7 @@ body {
   }
 
   .banner {
-    flex-direction: column; 
+    flex-direction: column;
     margin-bottom: 50px;
   }
 
@@ -174,13 +227,13 @@ body {
     margin-top: 14px;
     order: 2;
   }
-  
+
   .banner-img {
     width: 100%;
     order: 1;
   }
 
-  .banner-img{
+  .banner-img {
     width: 340px;
     height: 340px;
   }
@@ -198,7 +251,7 @@ body {
     font-weight: 500;
   }
 
-  .banner-btn-container{
+  .banner-btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,13 +263,43 @@ body {
     padding: 0;
     margin: 0 auto;
   }
-  
+
   .companies-logo-content {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
-  
 
+  .featured-products-container {
+    flex-direction: column;
+  }
 
- 
+  .featured-products-img {
+    width: 100%;
+    order: 2;
+  }
+
+  .featured-products-img {
+    width: 400px;
+    height: auto;
+  }
+
+  .featured-products-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    order: 1;
+  }
+
+  .featured-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .featured-products-title {
+    color: #0a0826;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
