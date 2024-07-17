@@ -26,31 +26,32 @@ body {
   align-items: center;
 }
 
-nav ul li {
+.nav-links > li {
   list-style: none;
   padding: 20px;
 }
 
-nav ul li a {
+.nav-links > li > a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 600px;
   font-size: 1rem;
 }
 
-nav ul li:first-child {
+.nav-links > li:first-child {
   padding-left: 0;
 }
 
-nav ul li:last-child {
+.nav-links > li:last-child {
   padding-right: 0;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
 }
 
-nav h3 {
+.logo > h3 {
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 700;
@@ -79,16 +80,17 @@ nav h3 {
   left: 0;
 }
 
-.banner img {
+.banner-img > img {
   width: 100%;
 }
 
-.banner h1 {
+.banner-title {
   color: var(--primary-color);
   font-size: 3.25rem;
   font-weight: bold;
 }
-.banner p {
+
+.banner-description {
   color: var(--primary-color);
   font-size: 1rem;
   font-weight: 600;
@@ -96,7 +98,7 @@ nav h3 {
   padding-bottom: 36px;
 }
 
-.banner button {
+.banner-btn {
   background-color: #e02c6d;
   font-weight: bold;
   font-size: 1rem;
@@ -118,23 +120,103 @@ nav h3 {
   font-size: 24px;
 }
 
+/* companies logo section related styles */
+.companies-logo-container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 0px;
+}
+
+.companies-logo-content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.companies-logo{
+  width: 100%;
+}
+
+.companies-logo > img {
+  width: 84px;
+  height: auto;
+}
+
+
+
 /* responsive media query */
 
 /* media query for small devices */
 @media screen and (max-width: 576px) {
   .nav {
     flex-direction: column;
+    padding-top: 35px;
+    padding-bottom: 22px;
+  }
+
+  .nav-links > h3 {
+    font-weight: bold;
+    font-size: 1rem;
   }
 
   .banner {
-    flex-direction: column;
+    flex-direction: column; 
+    margin-bottom: 50px;
   }
 
   .banner-content {
     width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 14px;
+    order: 2;
   }
-
+  
   .banner-img {
     width: 100%;
+    order: 1;
   }
+
+  .banner-img{
+    width: 340px;
+    height: 340px;
+  }
+
+  .banner-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  .banner-description {
+    font-size: 0.87rem;
+    font-weight: 600;
+  }
+
+  .banner-btn {
+    font-weight: 500;
+  }
+
+  .banner-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .companies-logo-container {
+    max-width: 450px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .companies-logo-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+
+
+ 
 }
