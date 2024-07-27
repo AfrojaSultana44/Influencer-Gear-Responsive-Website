@@ -57,6 +57,11 @@ body {
   font-weight: 700;
 }
 
+.hamburger-menu,
+.shopping-cart {
+  display: none;
+}
+
 .banner {
   max-width: 1200px;
   width: 100%;
@@ -310,6 +315,7 @@ body {
   .shopping-cart {
     color: #1b1b1b;
     font-size: 24px;
+    display: block;
   }
 
   .nav-links {
